@@ -1,15 +1,57 @@
 <!DOCTYPE html>
 <html>
 
-<head>
+ <head>
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1">
  <title>Weather App</title>
+ 
+<!--  External CSS -->
+<!-- Google Font -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+ 
+<!--  Stylesheet -->
  <link rel="stylesheet" href="style.css"/>
 </head>
 
 <body>
- 
+    <div class="container">
+        
+        <div class="weather_container">
+            
+            <div class="temp">
+                <p>20</p>
+            </div>
+            
+            <div class="time_location">
+                <p>Lagos</p>
+                
+                <p>12:30 - Tuesday 2025-09-16</p>
+            </div>
+            
+            <div class="condition">
+                <p></p>
+                
+                <p>Mist</p>
+            </div>
+            
+        </div>
+        
+        
+        
+        <form>
+            <nav>
+                <input type="text" placeholder="Search for a location" class="search_area"/>
+                
+                <button type="submit" class="search_button">
+                    Search
+                </button>
+            </nav>
+        </form>
+        
+    </div>
 </body>
 
 </html>
