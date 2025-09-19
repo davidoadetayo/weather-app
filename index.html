@@ -1,57 +1,77 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Weather App</title>
 
- <head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1">
- <title>Weather App</title>
- 
-<!--  External CSS -->
-<!-- Google Font -->
- <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
- 
-<!--  Stylesheet -->
- <link rel="stylesheet" href="style.css"/>
-</head>
+    <!--  External CSS -->
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Outfit:wght@100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
 
-<body>
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!--  Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <form>
+      <nav>
+        <input
+          type="text"
+          placeholder="Enter a location"
+          class="search_area"
+        />
+
+        <button
+          type="submit"
+          class="search_button"
+          title="Search"
+          aria-label="Search"
+        >
+          <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+        </button>
+      </nav>
+    </form>
+
     <div class="container">
-        
-        <div class="weather_container">
-            
-            <div class="temp">
-                <p>20</p>
-            </div>
-            
-            <div class="time_location">
-                <p>Lagos</p>
-                
-                <p>12:30 - Tuesday 2025-09-16</p>
-            </div>
-            
-            <div class="condition">
-                <p></p>
-                
-                <p>Mist</p>
-            </div>
-            
-        </div>
-        
-        
-        
-        <form>
-            <nav>
-                <input type="text" placeholder="Search for a location" class="search_area"/>
-                
-                <button type="submit" class="search_button">
-                    Search
-                </button>
-            </nav>
-        </form>
-        
-    </div>
-</body>
+      <div class="weather_container">
+        <p class="icon"></p>
 
+        <div class="temp">
+          <p>20°C</p>
+        </div>
+
+        <div class="location">
+           <p>Lagos</p>
+        </div>
+
+        <div class="condition">
+          <p></p>
+        </div>
+
+        <div class="time">
+  
+          <span>12:30 - Tuesday 2025-09-16</span>
+
+        </div>
+
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
 </html>
